@@ -20,9 +20,9 @@ public class HelloWorld {
 //        System.out.println(x++);
 //        System.out.println(x);
 
-        int x = 5;
-        System.out.println(++x);
-        System.out.println(x);
+//        int x = 5;
+//        System.out.println(++x);
+//        System.out.println(x);
 
 //        class y = 5;
 //        System.out.println(y);
@@ -32,6 +32,11 @@ public class HelloWorld {
 //        int three = (int) o;
 //        int three = (int) "three";
 //        System.out.println(three);
+
+        int x = 4;
+//        x = x + 5;
+        x += 5;
+        System.out.println(x);
 
     }
 }
