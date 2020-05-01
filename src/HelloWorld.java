@@ -16,6 +16,14 @@ public class HelloWorld {
         System.out.println("myString " + myString);
         System.out.println("myNumber " + myNumber);
 
+//        int x = 5;
+//        System.out.println(x++);
+//        System.out.println(x);
+
+        int x = 5;
+        System.out.println(++x);
+        System.out.println(x);
+
 
 
     }
