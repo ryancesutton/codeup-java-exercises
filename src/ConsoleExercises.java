@@ -32,6 +32,7 @@ public class ConsoleExercises {
         String l = scanner.nextLine();
         int y = Integer.parseInt(l);
 
+        System.out.println("Area: " + (x*y));
         System.out.println("Perimeter: " + ((x*2) + (y*2)));
 
 
