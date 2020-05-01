@@ -18,6 +18,16 @@ public class ConsoleExercises {
         String second = scanner.next();
         String third = scanner.next();
         System.out.printf("You entered: %s %s %s", first, second, third);
+        System.out.println("");
+
+        System.out.println("Enter a sentence...");
+        String sentence = scanner.next();
+        String userSentence = scanner.nextLine();
+        System.out.println("You entered: " + sentence + userSentence);
+
+        System.out.println("");
+
+
 
     }
 }
