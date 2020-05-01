@@ -3,10 +3,10 @@ public class HelloWorld {
 
         int myFavoriteNumber = 10000;
         String myString = "Ry Sutton";
-//        char myString = "Ry Sutton";
+//        String myString = "R";
 //        String myString = 3.14159;
 
-        long myNumber = 3.14;
+        float myNumber = 3.14F;
 
 
         System.out.println("Hello, World!");
