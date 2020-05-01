@@ -49,5 +49,9 @@ public class HelloWorld {
         y -= x;
         System.out.println(y);
 
+        byte z = 127;
+        z++;
+        System.out.println(z);
+
     }
 }
