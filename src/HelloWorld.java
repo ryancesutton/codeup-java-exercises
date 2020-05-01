@@ -27,7 +27,11 @@ public class HelloWorld {
 //        class y = 5;
 //        System.out.println(y);
 
-
+        String theNumberThree = "three";
+        Object o = theNumberThree;
+//        int three = (int) o;
+//        int three = (int) "three";
+//        System.out.println(three);
 
     }
 }
