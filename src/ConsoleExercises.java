@@ -27,10 +27,11 @@ public class ConsoleExercises {
 
         System.out.println("Enter the width...");
         String w = scanner.nextLine();
-        int x = Integer.parseInt(w);
+        float x = Float.parseFloat(w);
         System.out.println("Enter the length...");
         String l = scanner.nextLine();
-        int y = Integer.parseInt(l);
+        float y = Float.parseFloat(l);
+
 
         System.out.println("Area: " + (x*y));
         System.out.println("Perimeter: " + ((x*2) + (y*2)));
