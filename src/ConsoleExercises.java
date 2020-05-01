@@ -25,8 +25,14 @@ public class ConsoleExercises {
         String userSentence = scanner.nextLine();
         System.out.println("You entered: " + sentence + userSentence);
 
-        System.out.println("");
+        System.out.println("Enter the width...");
+        String w = scanner.nextLine();
+        int x = Integer.parseInt(w);
+        System.out.println("Enter the length...");
+        String l = scanner.nextLine();
+        int y = Integer.parseInt(l);
 
+        System.out.println("Perimeter: " + ((x*2) + (y*2)));
 
 
     }
