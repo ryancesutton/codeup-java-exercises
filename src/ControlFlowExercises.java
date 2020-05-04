@@ -6,11 +6,11 @@ public class ControlFlowExercises {
 //        int i = 5;
 //
 //        while(i <= 15) {
-//            System.out.println(i);
+//            System.out.print(i + " ");
 //            i++;
 //        }
 
-//        int i = 2;
+//        long i = 2;
 //
 //        do {
 //            System.out.println(i);
@@ -26,7 +26,7 @@ public class ControlFlowExercises {
 //        }
 
 
-//        for (int i = 2; i < 1000000; i*=i){
+//        for (long i = 2L ; i < 1000000; i*=i){
 //            System.out.println(i);
 //        }
 
