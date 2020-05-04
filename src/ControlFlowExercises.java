@@ -62,18 +62,18 @@ public class ControlFlowExercises {
         String yesOrNo = scanner.nextLine();
         if(yesOrNo.equals("yes")){
             if (userGrade >= 0 && userGrade <= 59){
-                System.out.println("F");
+                System.out.println("Your grade is: F");
             } else if (userGrade >= 60 && userGrade <= 66){
-                System.out.println("D");
+                System.out.println("Your grade is: D");
             } else if (userGrade >= 67 && userGrade <= 79){
-                System.out.println("C");
+                System.out.println("Your grade is: C");
             } else if (userGrade >= 80 && userGrade <= 87){
-                System.out.println("B");
+                System.out.println("Your grade is: B");
             } else if (userGrade >= 88 && userGrade <= 100){
-                System.out.println("A");
+                System.out.println("Your grade is: A");
             }
         } else {
-            System.out.println("We're done here!");
+            System.out.println("You dont want to see? Ok. We're done here!");
         }
 
 
