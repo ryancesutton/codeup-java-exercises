@@ -43,16 +43,39 @@ public class ControlFlowExercises {
 //        }
 
         Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Enter an integer: ");
+//        String userInput = scanner.nextLine();
+//        int userNumber = Integer.parseInt(userInput);
+//
+//        System.out.println(userNumber);
+//        System.out.print("number | squared | cubed\n");
+//        System.out.print("------ | ------- | -----\n");
+//        for (int i = 1; i <= userNumber; i++) {
+//            System.out.printf("%d      | %d       | %d   \n", i, i*i, (i*i*i));
+//        }
 
-        System.out.println("Enter an integer: ");
+        System.out.println("Enter a grade 0 - 100: ");
         String userInput = scanner.nextLine();
-        int userNumber = Integer.parseInt(userInput);
-
-        System.out.println(userNumber);
-        System.out.print("number | squared | cubed\n");
-        System.out.print("------ | ------- | -----\n");
-        for (int i = 1; i <= userNumber; i++) {
-            System.out.printf("%d      | %d       | %d   \n", i, i*i, (i*i*i));
+        int userGrade = Integer.parseInt(userInput);
+        System.out.println("Continue? Type: [yes/no]");
+        String yesOrNo = scanner.nextLine();
+        if(yesOrNo.equals("yes")){
+            if (userGrade >= 0 && userGrade <= 59){
+                System.out.println("F");
+            } else if (userGrade >= 60 && userGrade <= 66){
+                System.out.println("D");
+            } else if (userGrade >= 67 && userGrade <= 79){
+                System.out.println("C");
+            } else if (userGrade >= 80 && userGrade <= 87){
+                System.out.println("B");
+            } else if (userGrade >= 88 && userGrade <= 100){
+                System.out.println("A");
+            }
+        } else {
+            System.out.println("We're done here!");
         }
+
+
     }
 }
