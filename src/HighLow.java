@@ -12,7 +12,7 @@ public class HighLow {
 //        System.out.println("numberToGuess = " + numberToGuess);
 
         while (true) {
-            System.out.println("Guess a number between 1 and 10: ");
+            System.out.println("Guess a number between 1 and 100: ");
             int userNumber = Integer.parseInt(scan.nextLine());
             if (userNumber > numberToGuess) {
                 System.out.println("Lower");
