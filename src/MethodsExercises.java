@@ -1,11 +1,12 @@
 import org.w3c.dom.ls.LSOutput;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class MethodsExercises {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         System.out.println("Sum: " + addItUpp(6, 8));
         System.out.println("Difference: " + subtractItUp(6, 8));
@@ -19,12 +20,15 @@ public class MethodsExercises {
         while(true) {
             factorial();
             System.out.println("Would you like to continue? [y/n]");
-            String yesOrNo = input.nextLine();
+            String yesOrNo = scan.nextLine();
             if (yesOrNo.toLowerCase().equals("n")){
                 System.out.println("Okay we're done!");
                 break;
             }
         }
+
+        rollDice(scan);
+
 
 
     }
@@ -97,6 +101,28 @@ public class MethodsExercises {
         System.out.println(userInput + "!" + " = " + total);
 
     }
+
+
+    public static void rollDice(Scanner scan) {
+
+        while (true) {
+            System.out.println("Enter the number of sides for a pair of dice: ");
+            short userInput = Short.parseShort(scan.nextLine());
+            int range = userInput - 1 + 1;
+            System.out.println("First Die = " + ((int)(Math.random() * range) + 1));
+            System.out.println("Second Die = " + ((int)(Math.random() * range) + 1));
+
+            System.out.println("Roll the dice? [y/n]");
+            if(scan.nextLine().equalsIgnoreCase("n")) {
+                System.out.println("Okay we're done!");
+                break;
+            }
+        }
+
+    }
+
+
+
 
 
 }
