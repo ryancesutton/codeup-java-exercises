@@ -4,43 +4,52 @@ import java.util.Scanner;
 
 public class MethodsExercises {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Sum: " + addItUpp(6,8));
+        System.out.println("Sum: " + addItUpp(6, 8));
         System.out.println("Difference: " + subtractItUp(6, 8));
-        System.out.println("Product: " + multiply(6,8));
-        System.out.println("Quotient: " + divide(6,3));
-        System.out.println("Modulus: " + modulus(7,4));
+        System.out.println("Product: " + multiply(6, 8));
+        System.out.println("Quotient: " + divide(6, 3));
+        System.out.println("Modulus: " + modulus(7, 4));
         System.out.println("Multiply w/ Loop: " + multiplierLoop(2, 4));
         System.out.println("Multiply w/ Rec: " + multiplyRec(10, 10));
         getInteger(1, 10);
-        factorial(input);
+
+        while(true) {
+            factorial();
+            System.out.println("Would you like to continue? [y/n]");
+            String yesOrNo = input.nextLine();
+            if (yesOrNo.toLowerCase().equals("n")){
+                System.out.println("Okay we're done!");
+                break;
+            }
+        }
 
 
     }
 
-    public static double addItUpp(double num1, double num2){
+    public static double addItUpp(double num1, double num2) {
         return num1 + num2;
     }
 
-    public static double subtractItUp(double num1, double num2){
+    public static double subtractItUp(double num1, double num2) {
         return num1 - num2;
     }
 
-    public static double multiply(double num1, double num2){
+    public static double multiply(double num1, double num2) {
         return num1 * num2;
     }
 
     // SHOULD RESULT IN UNDEFINED BUT GETTING INFINITY
-    public static double divide(double num1, double num2){
-        if(num2 == 0) {
+    public static double divide(double num1, double num2) {
+        if (num2 == 0) {
             return 0;
         }
         return num1 / num2;
     }
 
-    public static double modulus(double num1, double num2){
+    public static double modulus(double num1, double num2) {
         return num1 / num2;
     }
 
@@ -60,7 +69,7 @@ public class MethodsExercises {
         if ((a == 0) || (b == 0)) {
             return 0;
         }
-            return (a + multiplyRec(a, b - 1));
+        return (a + multiplyRec(a, b - 1));
 
     }
 
@@ -69,7 +78,7 @@ public class MethodsExercises {
         System.out.print("Enter a number between 1 and 10: ");
         int userInput = Integer.parseInt(scan.nextLine());
 
-        if(userInput < min || userInput > max){
+        if (userInput < min || userInput > max) {
             System.out.println("Your number is invalid. Try again!");
             return getInteger(min, max);
         } else {
@@ -78,17 +87,16 @@ public class MethodsExercises {
         }
     }
 
-    public static void factorial(Scanner scan){
-        System.out.print("Enter a number between 1 and 10: ");
-        int userInput = scan.nextInt();
+    public static void factorial() {
+        int userInput = getInteger(1, 10);
+        long total = 1L;
         System.out.println("You entered: " + userInput);
-        int fact = 1;
-        for(int i = 1; i <=userInput; i++){
-            fact *= i;
+        for (int fact = userInput; fact > 0; fact--) {
+            total = total * fact;
         }
-        System.out.println(userInput + "! " + "= " + fact);
-    }
+        System.out.println(userInput + "!" + " = " + total);
 
+    }
 
 
 }
