@@ -33,14 +33,14 @@ public class MethodsExercises {
         return num1 / num2;
     }
 
-    // MULTIPLY WITH FOR LOOP PRODUCT OF 2X4 IS 0+0 0+1 1+1 2+2
+    // MULTIPLY WITH FOR LOOP PRODUCT OF 2X4 IS IDK
     public static int multiplierLoop(int a, int b) {
-        int resultAt = 0;
+        int result = 0;
         for (int i = 0; i < a; i++) {
-            resultAt += b;
+            result += b;
         }
 
-        return resultAt;
+        return result;
     }
 
     // MULTIPLY WITH RECURSION PRODUCT OF 2X4 IS 2+3 + 1+2
