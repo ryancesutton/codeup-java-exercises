@@ -10,11 +10,11 @@ public class MethodsExercises {
         System.out.println("Sum: " + addItUpp(6,8));
         System.out.println("Difference: " + subtractItUp(6, 8));
         System.out.println("Product: " + multiply(6,8));
-        System.out.println("Quotient: " + divide(6,0));
+        System.out.println("Quotient: " + divide(6,3));
         System.out.println("Modulus: " + modulus(7,4));
         System.out.println("Multiply w/ Loop: " + multiplierLoop(2, 4));
         System.out.println("Multiply w/ Rec: " + multiplyRec(10, 10));
-//        System.out.println(getInteger(1,10));
+        getInteger(1, 10);
         factorial(input);
 
 
@@ -34,6 +34,9 @@ public class MethodsExercises {
 
     // SHOULD RESULT IN UNDEFINED BUT GETTING INFINITY
     public static double divide(double num1, double num2){
+        if(num2 == 0) {
+            return 0;
+        }
         return num1 / num2;
     }
 
@@ -61,12 +64,19 @@ public class MethodsExercises {
 
     }
 
-//    public static int getInteger(int min, int max) {
-//       Scanner scan = new Scanner(System.in);
-//       System.out.print("Enter a number between 1 and 10: ");
-//        int userInput = getInteger(1, 10);
-//        return userInput;
-//    }
+    public static int getInteger(int min, int max) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a number between 1 and 10: ");
+        int userInput = Integer.parseInt(scan.nextLine());
+
+        if(userInput < min || userInput > max){
+            System.out.println("Your number is invalid. Try again!");
+            return getInteger(min, max);
+        } else {
+            System.out.println("You number is valid!");
+            return userInput;
+        }
+    }
 
     public static void factorial(Scanner scan){
         System.out.print("Enter a number between 1 and 10: ");
