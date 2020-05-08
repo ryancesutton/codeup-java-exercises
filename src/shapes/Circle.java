@@ -8,15 +8,13 @@ public class Circle {
 
         public Circle (double radius) {
             this.radius = radius;
-            this.area = Math.PI * (Math.pow(radius, 2));
-            this.circumference = (2 * Math.PI * radius);
         }
 
         public double getArea() {
-            return area;
+            return Math.PI * (Math.pow(radius, 2));
         }
 
         public double getCircumference() {
-            return circumference;
+            return (2 * Math.PI * radius);
         }
 }
