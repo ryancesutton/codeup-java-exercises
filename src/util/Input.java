@@ -4,26 +4,25 @@ import java.util.Scanner;
 
 public class Input {
 
-    private static Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
 
-        public static String getString(){
+        public String getString(){
             System.out.println("Type something: ");
-            String input = scanner.nextLine();
-            return input;
+            return scanner.nextLine();
         }
 
-        public static boolean yesNo (){
+        public boolean yesNo (){
             System.out.println("Enter yes or no: ");
             String input = scanner.nextLine();
-            if(input.toLowerCase().charAt(0) == 'y'){
+            if(input.equalsIgnoreCase("y")){
                 return true;
             } else {
                 return false;
             }
         }
 
-        public static int getInt(int min, int max){
+        public int getInt(int min, int max){
             System.out.println("Enter a number: ");
             int input = Integer.parseInt(scanner.nextLine());
             if (input < min || input > max){
@@ -35,14 +34,14 @@ public class Input {
             }
         }
 
-        public static int getInt(){
+        public int getInt(){
             System.out.println("Enter a number:" );
             int input = Integer.parseInt(scanner.nextLine());
             System.out.println("You entered: ");
             return input;
         }
 
-        public static double getDouble(double min, double max) {
+        public double getDouble(double min, double max) {
             System.out.println("Enter a number:");
             double input = Double.parseDouble(scanner.nextLine());
             if (input < min || input > max){
@@ -54,27 +53,12 @@ public class Input {
             }
         }
 
-        public static double getDouble(){
+        public double getDouble(){
         System.out.println("Enter a radius:" );
         double input = Double.parseDouble(scanner.nextLine());
 //        System.out.println("You entered: ");
         return input;
     }
-
-
-
-
-
-
-
-//    public static void main(String[] args) {
-//        System.out.println("getString = " + getString());
-//        System.out.println("yesNo = " + yesNo());
-//        System.out.println("getInt = " + getInt(1,10));
-//        System.out.println("getInt = " + getInt());
-//        System.out.println("getDouble = " + getDouble(500, 600));
-//        System.out.println("getDouble2 = " + getDouble());
-//    }
 
 
 
