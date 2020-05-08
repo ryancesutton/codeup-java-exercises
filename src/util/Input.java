@@ -55,9 +55,9 @@ public class Input {
         }
 
         public static double getDouble(){
-        System.out.println("Enter a number:" );
+        System.out.println("Enter a radius:" );
         double input = Double.parseDouble(scanner.nextLine());
-        System.out.println("You entered: ");
+//        System.out.println("You entered: ");
         return input;
     }
 
