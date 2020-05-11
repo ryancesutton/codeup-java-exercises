@@ -17,25 +17,27 @@ public class ArraysExercises {
             System.out.println("Using for loop: " + people[i].getName());
         }
 
-//        people = addPerson("The Dude");
+        people = addPerson(people, new Person("The Dude"));
 
         for (Person person : people) {
             System.out.println("Using forEach style: " + person.getName());
         }
 
 
-//        public static Person[] addPerson(Person[] people, Person person){
-//            Person[] newPeople = new Person[people.length + 1];
-//
-//            for (int i = 0; i < people.length; i++) {
-//                newPeople[i] = people[i];
-//            }
-//
-//            newPeople[newPeople.length -1] = person;
-//
-//            return newPeople;
-//        }
-//
+
+
+    }
+
+    public static Person[] addPerson(Person[] people, Person person){
+        Person[] newPeople = new Person[people.length + 1];
+
+        for (int i = 0; i < people.length; i++) {
+            newPeople[i] = people[i];
+        }
+
+        newPeople[newPeople.length -1] = person;
+
+        return newPeople;
     }
 
 
