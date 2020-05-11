@@ -1,4 +1,4 @@
-import java.lang.reflect.Array;
+
 import java.util.Arrays;
 
 public class ArraysExercises {
@@ -7,8 +7,8 @@ public class ArraysExercises {
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(numbers));
 
-        Person[] people;
-        people = new Person[3];
+
+        Person[] people = new Person[3];
         people[0] = new Person("Janice");
         people[1] = new Person("Ry");
         people[2] = new Person("Rex");
@@ -19,13 +19,23 @@ public class ArraysExercises {
             System.out.println("Using for loop: " + people[i].getName());
         }
 
+//        people = addPerson("The Dude");
+
         for (Person person : people) {
             System.out.println("Using forEach style: " + person.getName());
         }
 
 
-//        public static Person[] addPerson (people[]){
-//            people[4] = new Person("The Dude");
+//        public static Person[] addPerson(Person[] people, Person person){
+//            Person[] newPeople = new Person[people.length + 1];
+//
+//            for (int i = 0; i < people.length; i++) {
+//                newPeople[i] = people[i];
+//            }
+//
+//            newPeople[newPeople.length -1] = person;
+//
+//            return newPeople;
 //        }
 
     }

@@ -29,7 +29,6 @@ public class Input {
                 System.out.println("Not valid! Try again.");
                 return getInt(min,max);
             } else {
-                System.out.println("Your number is: ");
                 return input;
             }
         }
