@@ -2,12 +2,20 @@ package shapes;
 
 public class Square extends Rectangle{
 
-    private double side;
+    protected double side;
 
-    public Square(double length, double width, double side) {
-        super(length, width);
+    public Square(double side) {
+        super(side, side);
         this.side = length;
         this.side = width;
+    }
+
+    public double getPerimeter(){
+        return 4 * side;
+    }
+
+    public double getArea(){
+        return Math.pow(side, 2);
     }
 
 }
