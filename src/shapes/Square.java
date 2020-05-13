@@ -3,8 +3,8 @@ package shapes;
 public class Square extends Quadrilateral{
 
 
-    public Square(double length, double width) {
-        super(length, width);
+    public Square(double side) {
+        super(side, side);
     }
 
     public void setLength(double length) {
@@ -13,15 +13,18 @@ public class Square extends Quadrilateral{
     }
 
     public void setWidth(double width) {
-        this.length = width;
-        this.width = width;
+//        this.length = width;
+//        this.width = width;
+        this.setLength(width);
     }
 
     public double getPerimeter() {
-        return 2 * (length + width);
+
+        return 2 * (this.length + this.width);
     }
 
     public double getArea() {
-        return length * width;
+
+        return this.length * this.width;
     }
 }
