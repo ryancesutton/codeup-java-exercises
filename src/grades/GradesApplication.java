@@ -62,7 +62,7 @@ public class GradesApplication {
         for (String key : students.keySet()) {
             if (!students.containsKey(key)){
                 System.out.printf("Sorry, unable to find username of %s", key);
-            } else if (students.containsKey(key)){
+            } else if(userInput.equalsIgnoreCase(key)) {
                 foundStudent = students.get(key);
                 System.out.printf("Name: %s - GitHub username - %s\n"
                         + "Current Grade Average - %.2f\n", foundStudent.getName(), key, foundStudent.getGradeAverage());
