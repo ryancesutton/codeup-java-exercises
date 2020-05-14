@@ -46,9 +46,9 @@ public class GradesApplication {
     public static void printPrompt(HashMap<String, Student> students) {
         System.out.println("Welcome!");
         System.out.println("\nHere is the list of the student's GitHub usernames:\n");
-        System.out.print("|");
+        System.out.print("| ");
         for (String username : students.keySet()) {
-            System.out.printf("%s |", username);
+            System.out.printf("%s | ", username);
         }
         System.out.println("\n\nWhat student would you like to see more information on?");
     }

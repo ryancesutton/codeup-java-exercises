@@ -18,28 +18,28 @@ public class Student {
     }
     // adds the given grade to the grades property
     public void addGrade(int grade) {
-        grades.add(grade);
+        this.grades.add(grade);
     }
     // returns the average of the students grades
     public double getGradeAverage() {
-        double sum = 0;
-        for (Integer grade : grades) {
+        int sum = 0;
+        for (Integer grade : this.grades) {
             sum += grade;
         }
-        return (sum / grades.size());
+        return (sum / this.grades.size());
     }
 
 
-    public static void main(String[] args) {
-
-        Student student  = new Student("Ry");
-        student.addGrade(98);
-        student.addGrade(98);
-        student.addGrade(92);
-
-        System.out.println(student.getName() + "'s average is: " + student.getGradeAverage());
-
-    }
+//    public static void main(String[] args) {
+//
+//        Student student  = new Student("Ry");
+//        student.addGrade(98);
+//        student.addGrade(98);
+//        student.addGrade(92);
+//
+//        System.out.println(student.getName() + "'s average is: " + student.getGradeAverage());
+//
+//    }
 
 
 
