@@ -33,11 +33,20 @@ public class Input {
             }
         }
 
-        public int getInt(){
-            System.out.println("Enter a number:" );
-            int input = Integer.parseInt(scanner.nextLine());
-            System.out.println("You entered: ");
-            return input;
+        public int getInt() throws NumberFormatException{
+//            System.out.println("Enter a number:" );
+//            int input = Integer.parseInt(scanner.nextLine());
+//            System.out.println("You entered: ");
+//            return input;
+            try {
+                String s = getString();
+                return Integer.valueOf(s);
+            } catch (NumberFormatException e) {
+                System.out.println(e);
+                System.out.println("Please type a number: ");
+                return getInt();
+            }
+
         }
 
         public double getDouble(double min, double max) {
@@ -53,10 +62,18 @@ public class Input {
         }
 
         public double getDouble(){
-        System.out.println("Enter a radius:" );
-        double input = Double.parseDouble(scanner.nextLine());
+//        System.out.println("Enter a radius:" );
+//        double input = Double.parseDouble(scanner.nextLine());
 //        System.out.println("You entered: ");
-        return input;
+//        return input;
+            try {
+                String s = getString();
+                return Double.valueOf(s);
+            } catch (NumberFormatException e) {
+                System.out.println(e);
+                System.out.println("Please type a number: ");
+                return getInt();
+            }
     }
 
 
