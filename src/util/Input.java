@@ -61,7 +61,7 @@ public class Input {
             }
         }
 
-        public double getDouble(){
+        public double getDouble() throws NumberFormatException{
 //        System.out.println("Enter a radius:" );
 //        double input = Double.parseDouble(scanner.nextLine());
 //        System.out.println("You entered: ");
