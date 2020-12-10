@@ -60,6 +60,7 @@ public class MoviesApplication {
         for (Movie movie: MoviesArray.findAll()) {
             if (movie.getCategory().equalsIgnoreCase(category)) {
                 System.out.printf("%s -- %s", movie.getName(), movie.getCategory());
+                System.out.println("\n");
 
             }
         }
