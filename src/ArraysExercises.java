@@ -17,7 +17,8 @@ public class ArraysExercises {
             System.out.println("Using for loop: " + people[i].getName());
         }
 
-        people = addPerson(people, new Person("The Dude"));
+//        people = addPerson(people, new Person("The Dude"));
+        people = addPerson2(people, new Person("Mando"));
 
         for (Person person : people) {
             System.out.println("Using forEach style: " + person.getName());
@@ -35,6 +36,13 @@ public class ArraysExercises {
             newPeople[i] = people[i];
         }
 
+        newPeople[newPeople.length -1] = person;
+
+        return newPeople;
+    }
+
+    public static Person[] addPerson2(Person[] people, Person person){
+        Person[] newPeople = Arrays.copyOf(people, 4);
         newPeople[newPeople.length -1] = person;
 
         return newPeople;
