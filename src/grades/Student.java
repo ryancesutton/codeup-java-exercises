@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Student {
 
     private String name;
-    private ArrayList <Integer> grades;
+    private ArrayList <Double> grades;
 
     public Student(String name) {
         this.name = name;
@@ -17,13 +17,13 @@ public class Student {
         return this.name;
     }
     // adds the given grade to the grades property
-    public void addGrade(int grade) {
+    public void addGrade(double grade) {
         this.grades.add(grade);
     }
     // returns the average of the students grades
     public double getGradeAverage() {
-        int sum = 0;
-        for (Integer grade : this.grades) {
+        double sum = 0;
+        for (Double grade : this.grades) {
             sum += grade;
         }
         return (sum / this.grades.size());
