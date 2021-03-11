@@ -12,10 +12,10 @@ public class InputTest {
         Input input = new Input();
 //        System.out.println("You typed: " + input.getString());
 //        System.out.println("Yes or no: " + input.yesNo());
-//        System.out.println("Get integer between: " + input.getInt(1,10));
-        System.out.println("Get integer: " + input.getInt());
+        System.out.println("Get integer between: " + input.getInt(1,10));
+//        System.out.println("Get integer: " + input.getInt());
 //        System.out.println("Get double between: " + input.getDouble(30, 40));
-        System.out.println("Get double: " + input.getDouble());
+//        System.out.println("Get double: " + input.getDouble());
     }
 
 }

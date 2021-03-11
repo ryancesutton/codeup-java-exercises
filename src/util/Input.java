@@ -27,7 +27,7 @@ public class Input {
         }
 
         public int getInt(int min, int max){
-//            System.out.println("Enter a number: ");
+            System.out.println("Enter a number: ");
             int input = Integer.parseInt(scanner.nextLine());
             if (input < min || input > max){
                 System.out.println("Not valid! Try again.");
